@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root { --background:#081014; --foreground:#e8f0ef; --panel:#0e1a1f; --panel-2:#12242a; --line:#20343a; --muted:#91a8a9; --accent:#78e0b5; --blue:#74b8ff; }
+* { box-sizing:border-box; }
+html,body { min-height:100%; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:var(--font-geist), Arial, sans-serif; }
+button,input { font:inherit; }
+::selection { background:#78e0b533; }
+.grid-fade { background-image: linear-gradient(#ffffff06 1px, transparent 1px), linear-gradient(90deg,#ffffff06 1px,transparent 1px); background-size:32px 32px; }
+.map-grid { background-color:#102328; background-image: linear-gradient(#b8e5d00d 1px,transparent 1px),linear-gradient(90deg,#b8e5d00d 1px,transparent 1px); background-size:40px 40px; }
+@keyframes pulse-dot { 0%,100%{box-shadow:0 0 0 0 #78e0b566} 50%{box-shadow:0 0 0 8px #78e0b500} }
+.pulse-dot { animation:pulse-dot 2s infinite; }
